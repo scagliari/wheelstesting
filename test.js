@@ -2,21 +2,16 @@
 
     var @payload, @response
     set @payload = "{
-        "requestBody": {
-            "incidentNumber": 202305964209,
-            "serviceCode": "MG",
-            "serviceSequence": 1,
-            "requestor": "MktgCloud",
-            "requestType": "ADDNOTE",
-            "eventType": null,
-            "note": "email test@something bounced test."
-        }
+        "grant_type":"client_credentials",
+        "client_id":"lpfb4r0m3bbq77bifyoddjvz",
+        "client_secret":"cQ16dvRVC5HrXAIiAurxkLbD",
+        "account_id":"534006605"
     }"
 
     set @headername = "APP_NAME"
     set @headervalue = "INTERNAL_APP"
     
-    set @request = HTTPPost("http://LPUSXAD02:9083/mims/do/ServiceOrder/api/addNotesAndEvents",
+    set @request = HTTPPost("https://mcnm900xrbbvc4kmk9sq7zst3jjm.auth.marketingcloudapis.com/v2/token",
     "application/json", @payload, @response)
     
     ]%%
