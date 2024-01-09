@@ -8,8 +8,7 @@
         "account_id":"534006605"
     }"
 
-    set @headername = "APP_NAME"
-    set @headervalue = "INTERNAL_APP"
+   
     
     set @request = HTTPPost("https://mcnm900xrbbvc4kmk9sq7zst3jjm.auth.marketingcloudapis.com/v2/token",
     "application/json", @payload, @response)
