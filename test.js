@@ -17,7 +17,7 @@
     set @headervalue = "INTERNAL_APP"
     
     set @request = HTTPPost("http://LPUSXAD02:9083/mims/do/ServiceOrder/api/addNotesAndEvents",
-    "application/json", @payload, @response, @headername, @headervalue)
+    "application/json", @payload, @response)
     
     ]%%
 
