@@ -1,5 +1,5 @@
-<script>
+<script runat="server">
 
-Write("Testing")
+Write("Testing");
 
 </script>
