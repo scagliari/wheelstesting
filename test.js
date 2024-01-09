@@ -1,7 +1,7 @@
 %%[
 
-    var @payload, @response
-    set @payload = '{
+    VAR @payload, @response
+    SET @payload = '{
         "requestBody": {
           "incidentNumber": 202305957336,
           "serviceCode": "MG",
@@ -13,10 +13,10 @@
         }
       }'
 
-    set @headername = "APP_NAME"
-    set @headervalue = "INTERNAL_APP"
+    SET @headerName = "APP_NAME"
+    SET @headerValue = "INTERNAL_APP"
     
-    set @request = HTTPPost("http://LPUSXAD01:9087/mims/do/ServiceOrder/api/addNotesAndEvents",
+    SET @request = HTTPPost("http://LPUSXAD01:9087/mims/do/ServiceOrder/api/addNotesAndEvents",
     "application/json", @payload, @response, @headername, @headervalue)
     
     ]%%
