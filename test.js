@@ -9,7 +9,7 @@
           "requestor": "CloudPage",
           "requestType": "AddEvent",
           "eventType": "TESTHIST",
-          "note": null
+          "note": "this is a test from SFMC"
         }
       }'
 
