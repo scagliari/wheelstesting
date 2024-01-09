@@ -10,8 +10,7 @@
 
    
     
-    set @request = HTTPPost("https://mcnm900xrbbvc4kmk9sq7zst3jjm.auth.marketingcloudapis.com/v2/token",
-    "application/json", @payload, @response)
+    set @request = "test"
     
     ]%%
 
