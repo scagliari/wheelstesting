@@ -10,7 +10,7 @@
 
    
     
-    set @request = HTTPPost("https://mcnm900xrbbvc4kmk9sq7zst3jjm.auth.marketingcloudapis.com/v2/token",
+    set @request = HTTPPost("http://LPUSXAD01:9087/mims/do/ServiceOrder/api/addNotesAndEvents",
     "application/json", @payload, @response)
     
     ]%%
